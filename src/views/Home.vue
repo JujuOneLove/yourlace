@@ -1,18 +1,39 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="../assets/logo.svg">
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import router from '@/router'
 
 export default {
   name: 'home',
-  components: {
-    HelloWorld
+  mounted () {
+    window.addEventListener('keypress', this.nextPage)
+  },
+  beforeDestroy () {
+    window.removeEventListener('keypress', this.nextPage)
+  },
+  methods: {
+    nextPage (e) {
+      if ((e.keyCode === 13) || (e.keyCode === 32)) {
+        router.push('/about', () => {})
+      }
+    }
   }
 }
 </script>
+
+<style lang="scss" scoped>
+  .home {
+    h1 {
+      text-align: center;
+      font-size: 4em;
+
+      > div {
+        font-size: 1.2em;
+      }
+    }
+  }
+</style>

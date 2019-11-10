@@ -1,32 +1,77 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
   </div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+  body {
+    margin: 0;
+  }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
     color: #2c3e50;
+    min-height: 100vh;
+    display: flex;
 
-    &.router-link-exact-active {
-      color: #42b983;
+    > div {
+      width: 100%;
+      margin: auto
+    }
+
+    div, p {
+      font-size: 30px;
     }
   }
-}
+
+  .sally {
+    img {
+      width: 450px;
+    }
+
+    .blabla {
+      min-height: 100px;
+      position: relative;
+      top: -125px;
+
+      .char {
+      }
+    }
+
+    &.free {
+      display: flex;
+
+      .blabla {
+        position: initial;
+      }
+
+      > div {
+        width: 75%;
+      }
+
+      img {
+        object-fit: contain;
+        object-position: top;
+        width: 25%;
+      }
+    }
+  }
+
+  .blabla {
+    border: 1px solid grey;
+    border-radius: 25px;
+    background: white;
+    padding: 10px 20px;
+    width: 90%;
+    margin: auto;
+    text-align: left;
+  }
+
+  .vue-typer .custom.caret {
+    display: none;
+  }
 </style>

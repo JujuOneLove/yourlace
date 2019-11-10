@@ -1,10 +1,9 @@
 <template>
-  <div class="about">
+  <div class="fin">
     <div class="sally">
       <img src="../assets/Sally.png">
       <div class="blabla">
-        <p><vue-typer text='Salut ! Je suis Sally.' :type-delay='40' :repeat='0'></vue-typer></p>
-        <p><vue-typer text='Aujourd’hui, nous allons découvrir ensemble le monde magnifique du tissage. Tout d’abord, je vais te présenter son histoire ...' :pre-type-delay='2000' :type-delay='40' :repeat='0'></vue-typer></p>
+        <p><vue-typer text="Felicitation, tu as reussi ! Allez sally (t'as compris : Salut -> Sally, hihihi )" :type-delay='40' :repeat='0'></vue-typer></p>
       </div>
     </div>
   </div>
@@ -15,7 +14,7 @@ import router from '@/router'
 import { VueTyper } from 'vue-typer'
 
 export default {
-  name: 'about',
+  name: 'fin',
   components: {
     VueTyper
   },
@@ -28,7 +27,7 @@ export default {
   methods: {
     nextPage (e) {
       if ((e.keyCode === 13) || (e.keyCode === 32)) {
-        router.push('/motifs', () => {})
+        router.push('/', () => {})
       }
     }
   }
