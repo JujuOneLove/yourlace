@@ -31,7 +31,7 @@ import router from '@/router'
 import { VueTyper } from 'vue-typer'
 
 export default {
-  name: 'plan-1',
+  name: 'plan',
   components: {
     VueTyper
   },
@@ -44,7 +44,7 @@ export default {
   methods: {
     nextPage (e) {
       if ((e.keyCode === 13) || (e.keyCode === 32)) {
-        router.push('/plan-2', () => {})
+        router.push('/etapes', () => {})
       }
     }
   }

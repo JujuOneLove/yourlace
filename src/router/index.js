@@ -2,8 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
-import Plan1 from '../views/Plan1.vue'
-import Plan2 from '../views/Plan2.vue'
+import Plan1 from '../views/Plan.vue'
 import Motifs from '../views/Motifs'
 import Etapes from '../views/Etapes'
 import Fin from '../views/Fin'
@@ -27,14 +26,9 @@ const routes = [
     component: Motifs
   },
   {
-    path: '/plan-1',
-    name: 'plan-1',
+    path: '/plan',
+    name: 'plan',
     component: Plan1
-  },
-  {
-    path: '/plan-2',
-    name: 'plan-2',
-    component: Plan2
   },
   {
     path: '/etapes',
