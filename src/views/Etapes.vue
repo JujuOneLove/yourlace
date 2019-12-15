@@ -6,8 +6,8 @@
           <p><vue-typer text="Blabla etapes." :type-delay='40' :repeat='0'></vue-typer></p>
         </div>
         <div class="plan">
-          <iframe v-if="store.fond === 'Fond 1'" width="560" height="315" src="https://www.youtube.com/embed/p_sxEaPXioM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <video v-else-if="store.fond === 'Fond 2'" src="../assets/UXD2-YourLace-MotifCarre.mp4" controls></video>
+          <iframe v-if="store.fond === 'Fond 1'" width="560" height="315" src="https://www.youtube.com/embed/nkPXIdtc1fY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe v-else-if="store.fond === 'Fond 2'" width="560" height="315" src="https://www.youtube.com/embed/-LyVjHeCLDw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
       <img src="../assets/SallyIndications.svg">
