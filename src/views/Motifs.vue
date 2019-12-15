@@ -5,7 +5,7 @@
       <div class="blabla">
         <p v-if="hasFond === false">
           <vue-typer
-            text='Parmi ces deux motifs, choisi celui que tu préfères. Je vais t’enseigner comment le réaliser étape par étape.'
+            text='Entre ces deux motifs, choisi celui que tu préfères. Je vais t’enseigner comment le réaliser étape par étape.'
             :type-delay='40' :repeat='0'></vue-typer>
         </p>
         <p class="bold" v-if="hasFond === false"><vue-typer text="Utilise la souris pour selectionner ton motif" :pre-type-delay='5000' :type-delay='40' :repeat='0'></vue-typer></p>

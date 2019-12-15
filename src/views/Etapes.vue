@@ -3,7 +3,7 @@
     <div class="sally free">
       <div>
         <div class="blabla">
-          <p><vue-typer text="Blabla etapes." :type-delay='40' :repeat='0'></vue-typer></p>
+          <p><vue-typer text="Les étapes vont t'être présentées sous un format vidéo. Tu pourras mettre sur pause pour prendre le temps de réaliser l'étape et remettre en route la vidéo pour continuer. Quand tu auras fini de suivre la vidéo : appuie sur la touche Entrée du clavier." :type-delay='40' :repeat='0'></vue-typer></p>
         </div>
         <div class="plan">
           <iframe v-if="store.fond === 'Fond 1'" width="560" height="315" src="https://www.youtube.com/embed/nkPXIdtc1fY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
