@@ -16,18 +16,18 @@
       </div>
     </div>
     <div class="fonds">
-      <div class="fond" v-on:click="onClick('Fond 1')">
+      <div class="fond" v-on:click="onClick('Motif 1')">
         <img class="fond__img" src="../assets/img/MotifCercle.jpeg"/>
         <div class="fond__content">
-          <div>Fond 1 :</div>
-          <div>Filoche</div>
+          <div>Motif 1 :</div>
+          <div>Rond</div>
         </div>
       </div>
-      <div class="fond" v-on:click="onClick('Fond 2')">
+      <div class="fond" v-on:click="onClick('Motif 2')">
         <img class="fond__img" src="../assets/img/MotifCarre.jpeg"/>
         <div class="fond__content">
-          <div>Fond 2 :</div>
-          <div>Dieppe Triple</div>
+          <div>Motif 2 :</div>
+          <div>Carré</div>
         </div>
       </div>
     </div>
