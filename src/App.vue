@@ -25,6 +25,9 @@
 
     div, p {
       font-size: 30px;
+      &.bold {
+        font-weight: bold;
+      }
     }
   }
 

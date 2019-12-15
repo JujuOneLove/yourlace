@@ -5,6 +5,7 @@
       <div class="blabla">
         <p><vue-typer text='Salut ! Je suis Sally.' :type-delay='40' :repeat='0'></vue-typer></p>
         <p><vue-typer text='Aujourd’hui, nous allons découvrir ensemble le monde magnifique du tissage. Tout d’abord, je vais te présenter son histoire ...' :pre-type-delay='2000' :type-delay='40' :repeat='0'></vue-typer></p>
+        <p class="bold"><vue-typer text="Appuyez sur la touche ''Entrée'' de votre clavier pour passer à l'écran suivant" :pre-type-delay='8000' :type-delay='40' :repeat='0'></vue-typer></p>
       </div>
     </div>
   </div>

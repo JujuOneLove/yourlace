@@ -7,21 +7,33 @@
           <p><vue-typer text='Tu as devant toi :' :pre-type-delay='3500' :type-delay='40' :repeat='0'></vue-typer></p>
         </div>
         <div class="plan">
-          <div class="plan_content">
-            <img src="../assets/img/mini-fuseau-guatambuSolo.png" />
-            <div>Fuseaux</div>
+          <div>
+            <div class="plan_content">
+              <img src="../assets/img/mini-fuseau-guatambuSolo.png" />
+              <div>Fuseaux (stylos)</div>
+            </div>
+            <div class="plan_content">
+              <img src="../assets/img/BobineDeFils.jpg" />
+              <div>Fils</div>
+            </div>
+            <div class="plan_content">
+              <img src="../assets/img/I-Grande-88539-epingles-dentelle.net.jpg" />
+              <div>Épingle</div>
+            </div>
           </div>
-          <div class="plan_content">
-            <img src="../assets/img/BobineDeFils.jpg" />
-            <div>Fils</div>
-          </div>
-          <div class="plan_content">
-            <img src="../assets/img/I-Grande-88539-epingles-dentelle.net.jpg" />
-            <div>Épingle</div>
+          <div>
+            <div class="plan_content">
+              <img src="../assets/img/Torchon.jpeg" />
+              <div>Coussin (ou torchon)</div>
+            </div>
+            <div class="plan_content">
+              <img src="../assets/img/Model.jpeg" />
+              <div>Modèles</div>
+            </div>
           </div>
         </div>
       </div>
-      <img src="../assets/Sally.png">
+      <img src="../assets/SallyIndications.svg">
     </div>
   </div>
 </template>
@@ -55,12 +67,15 @@ export default {
   .plan {
     .plan {
       display: flex;
-      margin-top: 10vh;
+      flex-direction: column;
+      > div{
+        display: flex;
+        margin-top: 10vh;
+      }
       &_content {
-        width: 175px;
-        height: 175px;
+        width: 300px;
+        height: 225px;
         border-radius: 25px;
-        border: 1px solid grey;
         display: flex;
         flex-direction: column;
         margin: auto;
