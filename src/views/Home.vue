@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.svg">
+    <img alt="Vue logo" src="../assets/UXD2-YourLace-Jihui_Xinyue_Florine-10.svg">
     <div class="instruction">
       Appuyez sur la touche " Entrée " de votre clavier pour passer à l'écran suivant
       <img src="../assets/ToucheEntree.svg" />
